@@ -1,0 +1,19 @@
+[package]
+name = "simple-rs-sha2-512"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.89"
+description = "simple rust sha2 (512bit) implementation"
+license = "MIT"
+repository = "https://github.com/Azero123/simple-rs-sha2-512"
+homepage = "https://github.com/Azero123/simple-rs-sha2-512#readme"
+readme = "readme.md"
+authors = ["Azero123"]
+keywords = ["sha2", "sha512", "sha2-512", "sha", "hash"]
+categories = ["cryptography", "algorithms"]
+
+[dependencies]
+
+[profile.release]
+codegen-units = 1
+lto = true
